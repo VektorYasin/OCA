@@ -1,6 +1,8 @@
 package q055;
 public class Q056 {
+
 	public static void main(String[] args) {
+
 		int x = 5;
 		while (isAvaillable(x)) {
 			System.out.print(x);
@@ -9,6 +11,7 @@ public class Q056 {
 	}
 	
 	public static boolean isAvaillable(int x) {
+		
 		return x-- > 0 ? true : false;
 	}
 }
