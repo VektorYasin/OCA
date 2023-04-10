@@ -1,6 +1,6 @@
 package q017;
 
-public class Test {
+class Test {
 	int x, y;
 	
 	public Test(int x, int y) {
@@ -8,8 +8,8 @@ public class Test {
 	}
 	
 	public void initialize(int x, int y) {
-		this.x = x * x;
-		this.y = y * y;
+		this.x = x * x;//9
+		this.y = y * y;//25
 	}
 	
 	public static void main(String[] args) {
@@ -17,6 +17,7 @@ public class Test {
 	Test objTest = new Test(x, y);
 
 	System.out.println(objTest.x + " " + y); // prints the local variables
+										//objTest.y yi yazdırmamış, scope'taki y'yi yazdırıyor. O nedenle 5
 	}
 }
 //What is the result?

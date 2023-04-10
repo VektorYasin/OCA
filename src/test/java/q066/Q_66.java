@@ -1,4 +1,4 @@
-package q066;
+/*package q066;
 
 
 	interface I {
@@ -40,4 +40,4 @@ public class Q_66 {
 //C. Compilation fails.
 //D. C2C2
 //Answer: A
-
+*/

@@ -2,11 +2,16 @@ package q008;
 
 public class Q008 {
 
-	public static void main(String[] args) {	
-		String [] [] arr = {{"A", "B", "C"}, {"D", "E"}};	
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[i].length; j++) {
+	public static void main(String[] args) {
+
+		String [] [] arr = {{"A","B","C"}, {"D","E"}};
+		System.out.println();
+
+		for (int i=0; i<arr.length; i++) {	//arr.length=2
+
+			for (int j = 0; j<arr[i].length; j++) {	//arr[i].length=3
 				System.out.print(arr[i][j]+ " " );
+
 				if (arr[i][j].equals("B")) {
 					continue; //bir etkisi yok
 				}

@@ -1,29 +1,30 @@
-package OCA223_Q61_71;
+package q064;
 
+    //MyString.Java:
+    //package p1;
 
-//MyString.Java:
+    class MyString {
+        String msg;
 
-//package p1;
-class MyString {
-    String msg;
-    MyString(String msg){
-        this.msg =msg;
+        MyString(String msg){
+            this.msg =msg;
 
+        }
     }
-}
-//Test.java:
-//package p1;
-public class Q_64 {
-    public static void main(String[] args) {
-        System.out.println("Hello "+ new StringBuilder("Java SE 8"));
-        
-        System.out.println("Hello "+ new MyString("Java SE 8").msg);
-//        System.out.println("Hello "+ new MyString("Java SE 8").msg); //soruda .msg yok. O durumda hush code yazdirir
+    //Test.java:
+    //package p1;
+    public class Q_64 {
+        public static void main(String[] args) {
+            System.out.println("Hello "+ new StringBuilder("Java SE 8"));
 
+           System.out.println("Hello "+ new MyString("Java SE 8").msg);
+    //        System.out.println("Hello "+ new MyString("Java SE 8").msg);
+            // soruda .msg yok. O durumda hash code yazdirir
+
+        }
     }
-}
 
-/*
+    /*
 
 NOT: Q49_60.Q57 --> soruda p1 yani package name olarak verilmis
     What is the result?

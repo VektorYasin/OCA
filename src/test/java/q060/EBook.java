@@ -1,20 +1,21 @@
 package q060;
 
 interface Readable {
-	
 	public void readBook();
 	public void setBookMark();
 }
 
-abstract class Book implements Readable {  		// line n1
-	public void readBook() { }	
-																		// line n2  // abstract class oldugu icin setBookMark();'i implement etmesine gerek yok.  
+abstract class Book implements Readable {  // line n1
+	public void readBook() { }
+	// line n2
+	// abstract class oldugu icin setBookMark() methodunu implement etmesine gerek yok.
 }
-//class EBook extends Book { 								// line n3
-//	public void readBook() { }
-//																		// line n4
-//
-//}
+	class EBook extends Book { 	// line n3  Book classındaki metodları implement yapmak zorunda extend olduğu için.
+
+	public void readBook() { }
+	public void setBookMark(){ } // line 4 cevap bu
+
+}
 
 /* 
  * Which option enables the code to compile? 
@@ -28,7 +29,7 @@ B. At line ne insert:
 B. Replace the code fragment at line n3 with:
 	abstract class EBook extensd Book{
 	
-D. At line n4 insert:
+D. At line n4 insert:  cevap bu
 	public void setBookMark(){}
 
 */

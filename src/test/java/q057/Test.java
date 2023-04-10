@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 class Person{
+
 	String nameString;
 	int age;
 	
@@ -12,13 +13,16 @@ class Person{
 		nameString = n;
 		age =a;
 	}
+
 	public String getName() {
 		return nameString;
 	}
+
 	public int getAge() {
 		return age;
 	}
 }
+
 public class Test {
 	public static void checkAge(List<Person> list, Predicate<Person> predicate) {
 		for (Person p : list) {
@@ -27,6 +31,7 @@ public class Test {
 			}
 		}
 	}
+
 	public static void main(String[] args) {
 		List<Person> iList = Arrays.asList(new Person("Hank",  45),
 																new Person("Charlie", 40),

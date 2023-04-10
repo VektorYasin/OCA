@@ -1,21 +1,22 @@
 package q070;
 
 public class Q_70 {
-	public static void main(String[] args) {
-//        int x = 10;
-//         ++x;//11
-//        int z = 0;
-//
-//        if(z >= 10 | z<= ++x){
-//            z = x;
-//        }else {
-//            z = x++;
-//        }
-//        System.out.println(z);
+    public static void main(String[] args) {
+        int x = 10;
+        ++x;//11
+        int z = 0;
+
+        if (z >= 10 | z <= ++x) {  //x=12
+            z = x;//12
+        } else {
+            z = x++;
+        }
+        System.out.println(z);
 
 
-  }
-    public void top(){
+    }
+}
+    /*public void top(){
         int x = 10;
         ++x;//11
         int z = 0;
