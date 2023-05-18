@@ -15,13 +15,20 @@ public class C extends A {
     }
 
     public static void main(String[] args) {
-        A b1=new A();
-        A b2=new C();
+        A b1=new A();//instance of class A
+        A b2=new C();//instance of class C
 
-        b1=(A)b2;      //line1
-        A b3= b2;   //line2 C cannot be cast to Q116.B
+        b1=(A)b2;      //line1  A parent class olduğu cast yapılabilir.
+        A b3= (B)b2;   //line2 C is not subclass of B, can not be "casted".
         b1.test();
         b3.test();
+        /*
+        (B) b2; attempts to cast the object referenced by b2 to type B
+        and assigns it to the variable b3. However, the object
+        referenced by b2 is an instance of class C,
+        which is not a subclass of B. Therefore, the casting is not valid
+        and will throw a ClassCastException at runtime.
+         */
     }
 }
 /*What is the result?

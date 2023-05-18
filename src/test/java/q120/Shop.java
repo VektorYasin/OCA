@@ -1,9 +1,8 @@
 package q120;
 
 class Cart {
-
-	Product p;
-	double totalAmount;	
+	Product p;//null
+	double totalAmount;	//0.0
 	}
 	
 class Product {
@@ -13,7 +12,6 @@ class Product {
 
  public class Shop {
 	public static void main(String[] args) {
-	
 		Cart c = new Cart();
 		System.out.println(c.p + ":" + c.totalAmount );
 	

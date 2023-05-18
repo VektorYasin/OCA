@@ -10,7 +10,7 @@ class Test {
     chs[0] = new String[5];
     chs[1] = new String[2];
     int i = 97;
-       //System.out.println(chs[1].length);
+       //System.out.println(chs[1].length);//2
 
     for (int a = 0; a < chs.length; a++) {
         for (int b = 0; b < chs.length; b++) {

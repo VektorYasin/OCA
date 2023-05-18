@@ -16,6 +16,8 @@ abstract class Book implements Readable {  // line n1
 	public void setBookMark(){ } // line 4 cevap bu
 
 }
+//normal class, interfacedeki tüm metotları implement etmek zorundadır.
+//abtsract class, interface deki tüm metotları implement etmek zorunda değildir.
 
 /* 
  * Which option enables the code to compile? 

@@ -8,13 +8,14 @@ public class Q96 {
 		int qty = 2;
 		String grade = "2";
 		double discount = 0.0;
+
 		switch (grade) {
 		case "1" :
 			discount = price * 0.1;
-			break;
+			break;//line13
 		case "2" :
 			discount = price * 0.5;
-//			continue;
+			//continue; //line 16
 		default:
 			System.out.println("Thank you!");
 

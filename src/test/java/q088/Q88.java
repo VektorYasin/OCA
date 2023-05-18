@@ -2,16 +2,14 @@ package q088;
 
 public class Q88 {
 	public static void main(String[] args) {
-        int x = 6;
-        while (isAvailable (x)) {
-            System.out.print(--x);
-
-       
-
-        }}
-        public static boolean isAvailable (int x) {
-            return --x > 0? true:false;
-            
+        int x = 6;//5
+        while (isAvailable (x)) {   //ln5  isAvailable() true dondugu muddetce metodun ıcıne gırer.
+            System.out.print(--x);  //ln6
+                                    //ln7
+        }
+    }
+        public static boolean isAvailable (int x) {//bu methoddan sadece true false doner, x değerini etkilemez.
+            return --x > 0? true:false; //ln12
         }
 	}
 

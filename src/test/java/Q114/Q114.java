@@ -3,11 +3,15 @@ package Q114;
 public class Q114 {
     public static void main(String[] args) {
         String[][] arr={{"A","B","C"},{"D","E"}};
-        for (int i=0; i<arr.length; i++){
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(arr[i][j]+" ");
+
+        for (int i=0; i<arr.length; i++){//2
+
+            for (int j = 0; j < arr[i].length; j++) {// 3
+
+                System.out.println(arr[i][j]+" ");//00A, 01B, 10D, 11E
+
                 if(arr[i][j].equals("B")){
-                    break;
+                    break;//ILK LOOPA GİDER
                 }
             }
             continue;

@@ -29,6 +29,9 @@ Which code fragment, when inserted at line n1, enables the App class to print Eq
  C. Option C
  D. Option D
  Answer: B
-
+To compare the contents of two strings for equality,
+the equals() method should be used, not the == operator.
+The equals() method compares the actual "contents" of the strings,
+while the == operator compares the "references".
 
  */

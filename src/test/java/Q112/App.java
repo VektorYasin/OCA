@@ -1,8 +1,12 @@
 package Q112;
 public class App {
-   static int count; //normalde static yok burda
+    static int count; //normalde static yok burda
+/*
+The count variable is an instance variable not a CLASS variable,
+but it is being used inside a static method
+ */
     public static void displayMsg(){
-        count++;                                         //line1
+        count++;//dogrudan cagirmak icin static olarak tanımlanmalı //line1
         System.out.println("Welcome"+"Visit Count"+count); //line2
     }
 

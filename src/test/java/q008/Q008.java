@@ -10,7 +10,8 @@ public class Q008 {
 		for (int i=0; i<arr.length; i++) {	//arr.length=2
 
 			for (int j = 0; j<arr[i].length; j++) {	//arr[i].length=3
-				System.out.print(arr[i][j]+ " " );
+				System.out.print(arr[i][j]+ " " );  //[0][0], [0][1], [0][2]  A B C
+													//[1][0], [1][1], [1][2]
 
 				if (arr[i][j].equals("B")) {
 					continue; //bir etkisi yok

@@ -1,30 +1,30 @@
 package q051;
 
-interface Exportable{
+interface Exportable{// interface teki medotların normalde access modifier public tir.
 	  void export();
 }
 class Tool implements Exportable{
-	//public yerinde protected var normalde
+	//public yerinde protected var normalde; implement yapan metotlar da public olmalı
 	public void export() {						// line n1
-
 	    	System.out.println("Tool::export");
 	}
 }
  class ReportTool extends Tool implements Exportable {
 	public void export() {							// line n2
-
 		System.out.println("RTool::export");
 	}
+
 	public static void main(String[] args) {
 		Tool aTool = new ReportTool();
 		Tool bTool = new Tool();
 		callExport(aTool);
 		callExport(bTool);
 	}
-	public static void callExport(Exportable ex) {
 
+	public static void callExport(Exportable ex) {
 		ex.export();
 	}
+
 }
 //What is the result?
 //A.	Compilation fails only at line n2.

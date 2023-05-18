@@ -13,8 +13,7 @@ class Bus extends Vehicle{
 }
 public class Transport {
 	public static void main(String[] args) {
-
-		Vehicle v = new Vehicle();
+		Vehicle v = new Vehicle();//constructor cagirinca Vehicle yazdırdı
 	}
 }
 //What is the result?

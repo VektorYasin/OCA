@@ -4,21 +4,21 @@ class Vehicle{
 	String type = "4W";
 	int maxSpeed = 100;
 	
-	Vehicle(String type, int maxSpeed){
+	Vehicle(String type, int maxSpeed){ //constructor
 		this.type = type;
 		this.maxSpeed = maxSpeed;
 	}
-	Vehicle(){}
+	Vehicle(){}//consructor
 }
 public class Car extends Vehicle {
 	String trans;
 	
-	Car(String trans){
+	Car(String trans){//conctructor
 		// line n1
 
-		this.trans = trans;
+		this.trans = trans;//auto
 	}
-	Car(String type, int maxSpeed, String trans){
+	Car(String type, int maxSpeed, String trans){ //constructor
 		super(type, maxSpeed);	// line n2
 		this.trans =trans;
 	}

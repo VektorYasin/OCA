@@ -5,7 +5,7 @@ public class Q92 {
 
     public static void main(String[] args) {
         //line n1
-//    	String x = "1";
+//      short x = 1;
 //    	Integer x = new Integer("1");
         byte x = 1;
         switch (x) {
@@ -20,7 +20,8 @@ public class Q92 {
     }
 }
 //CIBSS  ==> Char, Integer, Byte, String, Short u switch te kullanabiliriz
-// Boolean, long, float, double we can not use with
+// Boolean, long, float, double we can not use with; long flat doublex bouldum.
+//(String x = "1") is not valid because the variable x is a String, not a numeric type, and cannot be used in a switch statement.
 
 /*
 *Which three code fragments can be independently inserted at line n1 to enable the code to print One?
@@ -30,7 +31,7 @@ B. short x = 1;
 C. String x = "1";
 D. long x = 1;
 E. double x = 1;
-F. Integer x = new Integer("1");
+F. Integer x = new Integer("1"); x=1 demek
 Answer: ABF
 *  */
 

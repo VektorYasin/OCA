@@ -1,5 +1,6 @@
 package Q110;
 //bunu kontrol edelim package leri mi ayri anlamadim
+
 public class Base {
     public void test(){
         System.out.println("Base ");
@@ -7,22 +8,22 @@ public class Base {
 }
 class DerivedA extends Base{
     public void test(){
-        System.out.println("DerivedA ");
+        System.out.println("DerivedA ");//method overriding
     }
 }
-class DerivedB extends  DerivedA{
+class DerivedB extends DerivedA{
     public void test(){
-        System.out.println("DerivedB ");
+        System.out.println("DerivedB ");//method overriding
     }
 
     public static void main(String[] args) {
         Base b1=new DerivedB();
         Base b2=new DerivedA();
         Base b3=new DerivedB();
-        b1=b3;
-        Base b4= b3;
-        b1.test();
-        b4.test();
+        b1=b3;//DerivedB()
+        Base b4= b3;//DerivedB()
+        b1.test();//DerivedB
+        b4.test();//DerivedB
 
     }
 }

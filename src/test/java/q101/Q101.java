@@ -11,7 +11,7 @@ public class Q101 {
         numbers [2]=30; //int oldugu icin null olmaz 00 olur
         numbers [3]=40;
         for (int x:numbers){
-            System.out.print(" "+x);
+            System.out.print(" "+x);//0 0 30 40
         }
 
 }

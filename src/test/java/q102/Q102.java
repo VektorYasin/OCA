@@ -8,7 +8,7 @@ public class Q102 {
         String[] planets ={"Mercury", "Venus", "Earth", "Mars"};
 
         System.out.print(planets.length);
-        System.out.print(planets[1].length());
+        System.out.print(planets[1].length());//Venus
     }
     //ANSWER IS : E. 4 5
 

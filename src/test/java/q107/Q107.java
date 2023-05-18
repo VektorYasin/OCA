@@ -13,6 +13,10 @@ public class Q107 {
 		        boolean b= new Boolean(args[1]);
 		        System.out.print(a +" "  + b);
 		    }
+			/*
+			new Boolean(Boolean.valueOf(args[0])) attempts to parse "1" as a boolean using Boolean.valueOf().
+			The method Boolean.valueOf("1") returns true because the string "1" is considered as a truthy value.
+			 */
 
 		}
 

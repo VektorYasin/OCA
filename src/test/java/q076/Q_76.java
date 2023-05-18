@@ -5,17 +5,17 @@ public class Q_76 {
 }
 abstract class Planet{
     protected void revolve(){
-
     }
+
     abstract void rotate();
-}
+    }
 class Earth extends Planet{
-    public void revolve(){ //protected
-
+    protected void revolve(){ //protected yap, abstarct ile aynı olmalı line 8
     }
-    protected void rotate(){ //make a protected
 
+    protected void rotate(){ //make a protected line10
     }
+
 }
 /*
 Which two modifications enable the code to compile? or question might be three modifications

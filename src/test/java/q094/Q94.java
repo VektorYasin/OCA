@@ -1,16 +1,13 @@
 package q094;
 
+    public class Q94 {
+    }
 
-public class Q94 {
-
-}
-
-class Person {
+    class Person {
     String name;
     int age = 25;
 
     Person(String name) {    // line n1
-
         setName(name);
     }
 
@@ -21,7 +18,6 @@ class Person {
 
     // setter and getter methods go here
     public void setName(String name) {
-
         this.name = name;
     }
 

@@ -14,14 +14,14 @@ public class ElectricAccount {
 
     //line1
     public void addKWh(double kWh) {
-        if (kWh > 0) {
+//        if (kWh > 0) {
             this.kWh += kWh;
             this.bill = this.kWh * this.rate;
         }
 
     }
 }
-}
+
 /*
 Any amount of electricity used by a customer
  (represented by an instance of the Customer class)
@@ -32,11 +32,10 @@ Any amount of electricity used by a customer
   never be able to tamper with or decrease
   the value of the member variable bill.
   How should you write methods in the
-  ElectricAccount
-   class at line n1 so that the member
-   variable bill is always equal to the value
-   of the member variable kwh multiplied by the
-    member variable rate?
+  ElectricAccount class at line n1
+  so that the member variable bill is always
+  equal to the value of the member variable kwh
+  multiplied by the member variable rate?
 
 A. Option A
  */
