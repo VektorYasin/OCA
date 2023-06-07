@@ -4,7 +4,9 @@ package q063;
 	}
 	
 	 interface Exportable {
-		void export(); //interface de access modifier belirtmesek de implicitly olarak "public" tir.
+		void export();//access modifier public'tir.
+		 // extend olanlar daha düşük seviyede bir access modifier kullanamazlar.
+		//interface de access modifier belirtmesek de implicitly "public" tir.
 	}
 
 	class Tool implements Exportable {//line1
@@ -15,6 +17,8 @@ package q063;
 
 	class ReportTool extends Tool {
      	public void export() {           // line n2
+//		attempting to assign weaker access privileges (default; 'package-private');
+//		was 'public
 //	        System.out.println("RTool::export");
 	    }
 

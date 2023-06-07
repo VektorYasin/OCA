@@ -2,7 +2,7 @@ package q193;
 
 public class Q193_3 {
     public static void main(String[] args) {
-        int sum = 0;
+        int sum = 0;//1,3,6,10,15
         for ( int xVal = 1; xVal <= 5; xVal++){
             sum = sum + xVal;
             System.out.println("The sum of "+xVal + " number is: " +sum);

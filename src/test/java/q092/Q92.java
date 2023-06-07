@@ -1,8 +1,8 @@
 package q092;
 
-public class Q92 {
+public class Q92 {}
 
-
+    class Test{
     public static void main(String[] args) {
         //line n1
 //      short x = 1;
@@ -26,8 +26,8 @@ public class Q92 {
 /*
 *Which three code fragments can be independently inserted at line n1 to enable the code to print One?
 (Choose three.)
-A. byte x = 1;
-B. short x = 1;
+A. byte x = 1; ok
+B. short x = 1; ok
 C. String x = "1";
 D. long x = 1;
 E. double x = 1;

@@ -1,10 +1,11 @@
 package q181;
 
 public class B {
-    public int doStuff(){
-        int x = 100; //Illegal modifier for parameter x; only final is permitted
-
-        return x;
+    private int doStuff(){
+        int x = 100; //only final is permitted
+//  variable declaration "private int x = 100;" is incorrect because
+//  local variables cannot have access modifiers.
+        return x++;
     }
 
  //  }

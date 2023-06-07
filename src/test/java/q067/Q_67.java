@@ -1,15 +1,17 @@
 package q067;
 
 public class Q_67 {
-
 }
+
 class Caller {
-   static    void init() {
+    //private void init(); private is only accessible within the class itself
+    public void init() {
        //private cannot access
         System.out.println("Initialized"); 
     }
 
-     static void start() {
+    //private void start(); private is only accessible within the class itself
+     public void start() {
         init();
         System.out.println("Started");
     }
@@ -18,15 +20,12 @@ class Caller {
 class TestCall {
     public static void main(String[] args) {
         Caller c = new Caller();
-        c.start();
-       c.init();
+        c.start();//'start()' has private access; not accessible from other classes
+        c.init();//init()' has private access;not accessible from other classes
     }
 }
 
 //What is the result?
-//A. An exception is thrown at runtime.
-//B. InitializedStartedInitialized
-//C. InitializedStarted
 //D. Compilation fails.
 //Answer: D
 

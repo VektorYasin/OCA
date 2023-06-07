@@ -1,33 +1,30 @@
 package q024;
 
-class A{
-	public A() {
-
-		System.out.print("A ");
+	class A{
+		public A() {
+			System.out.print("A ");
+		}
 	}
-}
-class B extends A{
-	public B() {
-
-		System.out.print("B ");
+	class B extends A{
+		public B() {
+			System.out.print("B ");
+		}
 	}
-}
-class C extends B{
-	public C() {
+	class C extends B{
+		public C() {
+			System.out.print("C");
+		}
+		public static void main(String[] args) {
+			C c = new C();
+			//The constructor of class A is called first
+			// because C extends B, which extends A. the output is A B C.
 
-		System.out.print("C");
+			A a = new A();
+			// only the constructor of class A is called. Hence, the output is A
+		}
 	}
-	public static void main(String[] args) {
-
-		C c = new C();
-		A a = new A();
-	}
-}
 
 //What is the result?
-//A.	C B A
-//B.	C
-//C.	A B C
-//D.	Compilation fails at line n1 and line n2
+//C.	A B C A
 
 

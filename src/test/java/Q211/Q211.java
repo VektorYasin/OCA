@@ -5,10 +5,10 @@ public class Q211 {
     /*
     A. Faster code at runtime
     B. More efficient code at runtime
-    C. More dynamic code at runtime
-    D. More flexible and reusable code
+    C. More dynamic code at runtime  TRUE
+    D. More flexible and reusable code  TRUE
     E. Code that is protected from extension by other classes
-    Answer: B D
+    Answer: C D
     */
 
 }

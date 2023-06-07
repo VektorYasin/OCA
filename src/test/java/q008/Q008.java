@@ -15,17 +15,17 @@ public class Q008 {
 
 				if (arr[i][j].equals("B")) {
 					continue; //bir etkisi yok
+					//'continue' is unnecessary as the last statement in a loop
 				}
 			}
 		continue;
-		}	
+
+		}
 	}
 }
-//What is the result? 
-//A.    A B C
+//What is the result?
 //B.	A B C D E
-//C.	A B D E
-//D.	Compilation fails.
+
 
 
 //continue; cannot be used outside of a loop

@@ -1,25 +1,32 @@
 package Q215;
-class LogFileException extends RuntimeException{}
-class AccessViolationException extends RuntimeException{}
+
+class LogFileException extends Exception {
+}
+
+class AccessViolationException extends RuntimeException {
+}
+
 public class App {
-    public static void main(String[] args) throws  LogFileException{
-         App obj=new App();
-         try {
-             obj.open();
-             obj.process();
-                  //insert code here
-             //throw new LogFileException ();
-         }catch (Exception e){
-             System.out.println("completed.");
-         }
+    public static void main(String[] args) throws LogFileException {//line2
+        App obj = new App();
+        try {
+            obj.open();
+            obj.process();
+            //insert code here//line7
+            //throw new LogFileException ();
+        } catch (Exception e) {
+            System.out.println("completed.");
+        }
     }
-    public void  process () {
+
+    public void process() throws LogFileException {//line13
         System.out.println("Processed");
-        throw new LogFileException();
-   }
-    public void open(){
+        throw new LogFileException();//checked(compile time) exception, must be handled.
+    }
+
+    public void open() {
         System.out.println("Opened.");
-        throw new AccessViolationException();
+        throw new AccessViolationException();//runtime exception
     }
 }
 //    Which action fixes the compiler error?

@@ -8,26 +8,23 @@ public class Q_72 {
 class Test2 {
 	 public static void main(String[] args) {
 	        Test2 ts = new Test2();
-	        System.out.print(isAvailable+"");//false
+	        System.out.print(isAvailable +" ");//false
 
-	        isAvailable = ts.doStuff();
+	        isAvailable = ts.doStuff();//true
 	        System.out.println(isAvailable);
 
 	    }
 
 	    public static boolean doStuff(){
-	        return !isAvailable;//true
+	        return !isAvailable;//!isAvailable=true
 	    }
 
-	    static boolean isAvailable = false; //önce isAvailable yazdiriyor sonra doStaff
+	    static boolean isAvailable = false;
+	 //önce static blok çalışır
 	}
 	/*
 	What is the result?
-	A.	Compilation fails.
 	B.	false true
-	C.	true false
-	D.	true true
-	E.	false false
 	Answer: B
 
 	 */

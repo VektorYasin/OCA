@@ -1,20 +1,25 @@
 package q045;
 
 abstract class Planet{
-	 protected void revolve() {		// line n1
+	protected void revolve() {	// line n1  child: protected veya public
 	}
-	abstract void rotate();				// line n2
+	abstract void rotate();		// line n2 -->"default" access modifier
+								//child'i default-->protected-->public
 }
 
-	 class Earth extends Planet{
-		public  void revolve() {		// line n3
-		 }
-		 protected void rotate() {		// line n4
-		 }
+class Earth extends Planet{
+//	void revolve() {			// line n3
+//	}
+	protected void rotate() {	// line n4
+	}
 }
+/*
+access modifiers: private--> default--> protected--> public
+child class'ların access modifier'Ları parent class ile aynı veya daha geniş olmalı.
+ */
 //	 Which two modifications, made independently, enable the code to compile? (Choose two.) 
-//			 A. 	Make the method at line n1 public.
+//			 A. Make the method at line n1 public.
 //			 B.	Make the method at line n2 public.
 //			 C.	Make the method at line n3 public. 			√
 //			 D.	Make the method at line n3 protected. 	√
-//			 E.		Make the method at line n4 public.
+//			 E.	Make the method at line n4 public.

@@ -14,7 +14,9 @@
 //		 E.It can run on any platform that has the Java Runtime Environment and Java Compiler
 //		 
 //		 
-//		 Answer: D
+//		 Answer: B, D
+//It can run on any platform if it was compiled for that platform
+//It can run on any platform that has a Java Compiler
 //		 
 	
 

@@ -16,7 +16,8 @@ public class Question134 {
 		abstract class A3 {
 			private static int i;
 			public void doStuff() {}
-			public A3() {}
+			public A3() {
+			}
 	//
 		}
 
@@ -87,3 +88,7 @@ public class Question134 {
 				abstract void doIt();
 			}
 	 */
+//	class A4{
+//		protected static final int i; //final olarak declare edilirse değer ataması yapılmalıdır.
+//		private A4() { 	}
+//	}

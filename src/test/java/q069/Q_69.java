@@ -3,22 +3,22 @@ package q069;
 public class Q_69 {
 
 }
-class Test {
+class q69a {
     public static void main(String[] args) {
 
-    String[][] chs = new String[5][2];
-    chs[0] = new String[5];
-    chs[1] = new String[2];
+    String[][] chs = new String[5][2];//chs.length = 5
+    chs[0] = new String[5];//chs[0].length= 5
+    chs[1] = new String[2];//chs[1].length = 2
     int i = 97;
-       //System.out.println(chs[1].length);//2
 
-    for (int a = 0; a < chs.length; a++) {
-        for (int b = 0; b < chs.length; b++) {
+    for (int a = 0; a < chs.length; a++) {//5 outer loop
+        for (int b = 0; b < chs.length; b++) {//5  inner loop; b < chs[a].length olmalıydı
             chs[a][b] = " " + i;
             i++;
 
         }
     }
+
     for (String[] ca : chs) {
         for (String c : ca) {
             System.out.print(c + " ");

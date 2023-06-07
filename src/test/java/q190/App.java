@@ -1,30 +1,25 @@
 package q190;
 
-class E1 extends Exception { //problem verir
-}
-
-class E2 extends RuntimeException {//problem vermez
-}
-
-public class App {
-    public void m1() throws E1 {
-        System.out.println("m1.Accessed.");
-        throw new E1();
+    class E1 extends Exception { //problem verir
     }
 
-    public void m2() { // You can throw any exception here to solve the problem.
+    class E2 extends RuntimeException {//problem vermez
+    }
 
-        try {
-            m1();
+    public class App {
+        public void m1() throws E1 {
+            System.out.println("m1.Accessed.");
+            throw new E1();//exception fırlatırsan method signauter eklyeceksin
+                            //ya da try catch blogu ile handle edeceksin
+        }
+
+    public void m2() { // You can throw any exception here to solve the problem.
             System.out.println("m2.Accessed.");
             throw new E2();
-        } catch (Exception e) {
-            System.out.println("m2.Caught.");
-        }
     }
 
     public static void main(String[] args) throws E1 { // starts to read codes from main method
-        int level = 1;                            // ONLY CHANGE
+        int level = 1;      // ONLY CHANGE
         App obj = new App();
         if (level <= 5 && level >= 3) { // ==> true now!!
             obj.m1();// ==> executed -- causes compilation error

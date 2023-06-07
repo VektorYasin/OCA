@@ -1,7 +1,9 @@
 package q181;
 
 public class A {
-    public void a(){}
+    public void a(){
+
+    }
     int a;
 }
 

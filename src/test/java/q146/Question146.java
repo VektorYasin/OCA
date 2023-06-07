@@ -5,20 +5,21 @@ public class Question146 {
     public static void main(String[] args) throws Exception {
 
         String[] strs = new String[2];
-		strs[0] = "A";
+		//strs[0] = "A";
         int idx = 0;
         for (String s : strs) {
 			strs[idx].concat("element " + idx);
 			idx++;
-//            System.out.println(idx);
-			//we can not concat if array is null bos olan array e concat yapamiyrz
+//           System.out.println(idx);
+			//we can not concat if array is null
+            // bos olan array e concat yapamiyoruz
 //
 //		for (String s : strs) {
 //			//strs[idx].idx;
 //			idx++;
 //		}
 		}
-            for (idx = 0; idx < strs.length; idx++) {
+            for (idx = 0; idx <strs.length; idx++) {
                 System.out.println(strs[idx]);
 //			
 //			//Answer: D
@@ -29,10 +30,9 @@ public class Question146 {
 
 /*
  * What is the output?
- * A. Element 0Element 1
- * B. Null element 0Nullelement 1
- * C. NullNull
  * D. A null pointer exception is thrown at runtime.
+ * NullPointerException: Cannot invoke "String.concat(String)"
+ * because "strs[idx]" is null
  */
 //second version
 //		String[] strs = {"A", "B"};

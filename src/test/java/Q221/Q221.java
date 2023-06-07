@@ -5,15 +5,23 @@ import java.util.List;
 
 public class Q221 {
     public static void main(String[] args) {
-        List colors=new ArrayList();
-        colors.add("green");
-        colors.add("blue");
-        colors.add("red");
+        List colors = new ArrayList();
+        colors.add("green");//0
+        colors.add("blue");//1
+        colors.add("red");//2
         colors.add("yellow");
-        colors.remove(2);
-        colors.add(2,"cyan");
-//        colors.set(2,"magenta");
-        System.out.println(colors);
+        colors.remove(2);//elemanı sildi.
+
+        System.out.println(colors);//[green, blue, yellow]
+
+        colors.add(2, "cyan");
+        System.out.println(colors);//[green, blue, cyan, yellow]
+
+        colors.set(2,"magenta");//set() remove gibi, elemanı silip yenisini ekledi
+        System.out.println(colors);//[green, blue, magenta, yellow]
+
+        colors.add(2, "brown");//add() ekler, eleman silmez.
+        System.out.println(colors);//[green, blue, brown, magenta, yellow]
     }
 }
 //    What is the result?

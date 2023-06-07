@@ -1,16 +1,18 @@
 package q048;
 
 public class Test {
-	//public static void main(String[] args) {
+//	public static void main(String[] args) {
 	
-		// line n1
+	// line n1
+
 //	Test() {}
 //	String str = "Java";
 	
-	//for(int iVal = 0; iVal <=5; iVal++){//main method olmasi gerek
-		
-	}
-//}
+//		for(int iVal = 0; iVal <=5; iVal++){//main method olmasi gerek
+//
+//		}
+//	}
+}
 
 
 	//Which two code fragments can be inserted at line n1?

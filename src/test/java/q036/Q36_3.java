@@ -6,13 +6,25 @@ public class Q36_3 {
 		String[] arr = {"A", "B", "C", "D"};
 
 		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]+ " " ); //1. arr[0] =String "A"
+			System.out.println(arr[i]+ " " );
 
-			if (arr[i].equals("A")) {  // 1. returns true
-				continue; // 1. goes back into inner loop
+			if (arr[i].equals("A")) {
+				continue;
+//continue:  It causes the program to skip the rest of the loop body and
+//jump to the next iteration of the loop.
 			}
-			System.out.println("Work Done");  // printed out
-			continue;  // goes back into the loop
-		}
-	}
-}
+			System.out.println("Work Done");
+			continue;
+		}//loop
+	}//main
+}//class
+
+/*
+			A
+			B
+			Work Done
+			C
+			Work Done
+			D
+			Work Done
+			*/

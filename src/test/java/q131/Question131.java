@@ -34,8 +34,9 @@ public class Question131 {
 //                  public static void main (String[] args) {
 //                      Vehicle y = new Car(20);
 //                      System.out.println(y);
-//                  }
-              }}
+                  }
+              }
+
 
 //What is the result?
 //A. Compilation fails at line n2.

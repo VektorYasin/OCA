@@ -7,19 +7,25 @@ public class Question140 {
 	        int iVar = 100;
 	        float fVar = 100.100f;
 	        double dVar = 123;
-	          fVar = iVar;//kucuk buyuge olur
-//          iVar = fVar; //buyuk kuvcuge olmaz
-//	          fVar = dVar;
-//         dVar = fVar;
-//          iVar = dVar;
-//	          dVar = iVar;
+			fVar = iVar;//kucuk buyuge olur
+          	//iVar = fVar; //buyuk kucuge olmaz
+			dVar=fVar;
+			/*
+			This line attempts to assign the value of iVar (an integer) to fVar (a float).
+			This assignment will cause a compilation error because
+			you are assigning a larger data type to a smaller data type
+			 */
+			//fVar = dVar;
+         	dVar = fVar;//kucuk buyuge olur
+          	//iVar = dVar;//buyuk kucuge olmaz
+			dVar = iVar;//kucuk buyuge olur
 
 	          /*
 	        Second Version
 	        the question was same but number of lines was changed.
-	        ivar=fvar was at line 8.
-	        fvar=dvar at line 9.
-	        ivar= dvar at line 11.
+	        ivar=fvar was at line 8.	olmaz
+	        fvar=dvar at line 9.	olmaz
+	        ivar= dvar at line 11.	olmaz
 	        be careful at line numbers.
 	         */
 

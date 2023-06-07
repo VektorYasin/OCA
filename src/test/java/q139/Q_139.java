@@ -1,7 +1,9 @@
 package q139;
 
+import Q112.App;
+
 public class Q_139 {
-	static int count;
+	static int count;//static biz ekledik
 
 	public static void displayMsg() {
 
@@ -10,7 +12,7 @@ public class Q_139 {
 		// instance variable asagidaki static methodun icinde cagiramiyoruz
 	}
 	public static void main(String[] args) {
-		displayMsg(); //class name ilede cagrilir
+		App.displayMsg(); //class name ilede cagrilir
 		displayMsg();   //line 2
 	}
 

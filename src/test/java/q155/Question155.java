@@ -9,55 +9,19 @@ public class Question155 {
         String days[] = {"sun", "mon", "wed", "sat"};
         for (String s: days){
             switch (s){
-                case "sat":
-                case "sun":
+                case "sat"://boş geçer, break'e kadar devam eder.
+                case "sun"://-1,-1
                     wd-=1;
                     break;
-                case "mon":
+                case "mon"://1+2
                     wd++;
-                case "wed":
+                case "wed"://2
                     wd+=2;
             }
         }
-        System.out.println(wd);
+        System.out.println(wd);//3
     }
 
 }
-/*
-* What is the result?
-A. 3
-B. 4
-C. -1
-D. Compilation fails.
-*Answer: A
-*
-* */
 
-/**?????Sinavda farklisi cikmis monday den sonra break varmis o da sonucu -1 olarak degistiriyor yazilmis fakat ben deneyince 1 olarak degisiyor??????????????
- *   int wd = 0;
- *         String days[] = {"sun", "mon", "wed", "sat"};
- *         for (String s: days){
- *             switch (s){
- *                 case "sat":
- *                 case "sun":
- *                     wd-=1;
- *                     break;
- *                 case "mon":
- *                     wd++;
- *                     break;
- *                 case "wed":
- *                     wd+=2;
- *             }
- *         }
- *         System.out.println(wd);
- *     }
- *
- * }
- * /*
- * * What is the result?
- * A. 3
- * B. 4
- * C. -1
- * D. Compilation fails.
- * Answer: C ??
- * * */
+

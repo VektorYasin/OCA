@@ -1,19 +1,22 @@
 package q084;
 
 public class Q_84 {
-//	public static void main(String[] args) {
-//
-	int array []=new int[] {1,2,3};            //A
-	int array2[] =new int [3]; 					//B
-//	array2[0]=1;
-//	array2[1]=2;
-//	array2[2]=3;
-//
-//	int array3[]=new int[] {1,2,3};			//C
-//
-//	int array4[]= new int[3]; array4= {1,2,3,5};	//D
-//  int array5[]=new int []{1,2,3};			//E
-//	}
+    public static void main(String[] args) {
+
+//    int[] array = new int[3]{1, 2, 3}; //A  false
+
+    int[] array = new int[3];  //B  true
+    array[0]=1;
+    array[1]=2;
+    array[2]=3;
+
+//    int array[3] = new int[]{1, 2, 3};   //C False
+
+//        int[] array = new int[3];   //D  False
+//        array = {1, 2, 3};
+
+        int array1[] = new int[]{1, 2, 3};  //E  True
+    }
 
 }
 

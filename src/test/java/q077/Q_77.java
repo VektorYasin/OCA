@@ -6,37 +6,38 @@ public class Q_77 {
 
     public static void main(String[] args) {
         int[] intArr = {8, 16, 64, 128};
-        for (int i : intArr) {
-            System.out.println(intArr[i] +" ");// Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException
-        }
+
+//        for (int i : intArr) {//8,
+//            System.out.println(intArr[i] +" ");//ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 4
+//            //intArr[8] bu değer yok, intArr[3]'e kadar var.
+//        }
 //             A
 //        for (int i : intArr){
 //            System.out.println(intArr[i]-1 +" ");  we can not use intArr[i] //--> gives ArrayIndexOutOfBoundsException
 //        }
 
-            // B
+        // B  DOGRU
 //        for (int i : intArr){
 //            System.out.println(i +" ");
 //            }
-//        }
 
-            // C
+        // C
 //        for (int i = 0 : intArr){
 //            System.out.println(intArr[i] +" ");//--> gives error
 //            i++;
 //        }
 
-            // D
+        // D
 //       for(int i = 0; i < intArr.length; i++) {
 //           System.out.println(i + " ");//--> gives 0 1 2 3
 //       }
 
-            //E
-//        for(int i = 0; i < intArr.length; i++) {
-//            System.out.println(intArr[i] + " ");//--> gives 8 16 64 128
-//        }
+        //E  TRUE
+        for (int i = 0; i < intArr.length; i++) {
+            System.out.println(intArr[i] + " ");//--> gives 8 16 64 128
+        }
 
-            // F
+        // F
 //        for(int i ; i < intArr.length; i++) {//--> gives error at this line
 //            System.out.println(intArr[i] + " ");
 //        }
@@ -50,7 +51,8 @@ public class Q_77 {
     Answer: BE
      */
 
-        }
-
     }
+}
+
+
 

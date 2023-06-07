@@ -2,8 +2,8 @@ package q175;
 
 public class App {
 
-	static int foo;
-	static int bar;
+	 static int foo;//foo değikeni ancak static yapılırsa kullanılabilir.
+	 static int bar;
 
 	static void process() { //static method static olmayan variable cagiramassin
 		foo += 10;  //Compile error verir int foo; oldugu      icin,
@@ -15,11 +15,15 @@ public class App {
 		App.process();
 		System.out.println(firstObj.bar);
 
-
 		App secondObj = new App();
 		App.process();
 		System.out.println(secondObj.bar);
 
 	}
+	/*
+	static variable'ları sadece static methodlar içinde çağırabilirsiniz.
+	static olmayan variable'ları static olmayan metodlar içinde çağırabilirsiniz.
+	A compile time error occurs
+	 */
 
 }

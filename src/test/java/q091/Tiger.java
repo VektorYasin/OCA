@@ -1,4 +1,4 @@
 package q091;
 
-public class Tiger extends Animal {
+public class Tiger extends Cat {
 }

@@ -21,4 +21,4 @@ public class Q36_2 {
 
 
     }
-}
+}//A Work done

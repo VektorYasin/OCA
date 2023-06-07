@@ -1,36 +1,37 @@
 package q026;
 
 public class FieldInit2 {
-	byte by;
-	short sh;
-	int i;
-	long l;
-	float f;	
-	double d;
-	boolean bo;
+	byte by;//0
+	short sh;//0
+	int i;//0
+	long l;//0
+	float f;//0.0
+	double d;//0.0
+	boolean bo;//false
 	char c;
-	String s;
-	StringBuilder sb;
-	StringBuffer sBuf;
-	Byte byte1;
-	Short short1;
-	Integer integer1;
-	Long long1;
-	Float float1;
-	Double double1;
-	Boolean boolean1;
-	Character character1;
-	int[] intarray;
-	String [] strarr;
+
+	String s;//null
+	StringBuilder sb;//null
+	StringBuffer sBuf;//null
+	Byte byte1;//null
+	Short short1;//null
+	Integer integer1;//null
+	Long long1;//null
+	Float float1;//null
+	Double double1;//null
+	Boolean boolean1;//null
+	Character character1;//null
+	int[] intarray;//null
+	String [] strarr;//null
 	void printAll() {
-		System.out.println("byte = " + by);
-		System.out.println("short= " + sh);
-		System.out.println("int = " + i);
-		System.out.println("long = " + l);
-		System.out.println("float = " + f);
-		System.out.println("double = " + d);
-		System.out.println("boolean = " + bo);
-		System.out.println("char = " + c);
+		System.out.println("byte = " + by);//0
+		System.out.println("short= " + sh);//0
+		System.out.println("int = " + i);//0
+		System.out.println("long = " + l);//0
+		System.out.println("float = " + f);//0.0
+		System.out.println("double = " + d);//0.0
+		System.out.println("boolean = " + bo);//false
+		System.out.println("char = " + c);//
 		
 		System.out.println("Byte = " + byte1);
 		System.out.println("Short = " + short1);

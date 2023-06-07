@@ -14,7 +14,5 @@ public class Q36_4 {
 			System.out.println("Work Done");  // NOT printed out
 			continue;
 		}
-
-
-	}
+	}//A
 }

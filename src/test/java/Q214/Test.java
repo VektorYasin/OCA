@@ -1,18 +1,19 @@
 package Q214;
 
 public class Test {
-    public static final int MIN=1;
+    public static final int MIN = 1;
 
     public static void main(String[] args) {
-        int x=args.length;
-        if(checkLimit(x)){     //line 1
+        int x = args.length;//the length of the args array, which represents the number of command-line arguments passed to the program.
+        if (checkLimit(x)) {//line 1
             System.out.println("Java SE");
-        }else{
+        } else {
             System.out.println("Java EE");
         }
     }
-    public  static boolean checkLimit(int x){
-        return  (x>=MIN) ? true : false;
+
+    public static boolean checkLimit(int x) {
+        return (x >= MIN) ? true : false;
     }
 }
 // And given the commands:

@@ -1,9 +1,9 @@
 package q148;
 
-public class Question148 {//150ileyer degistirmis
+public class Question148 {//150 ile yer degistirmis
+}
 
-
-
+class MyFile{
     public static void main(String[] args) {
         String arg1 = args[0];
         String arg2 = args[1];
@@ -12,13 +12,10 @@ public class Question148 {//150ileyer degistirmis
     }
 }
 // and this output:
-//              Arg is 2
+// Arg is 2
 
 //Which command should you run to obtain this output?
-//A.	java MyFile 2
-//B.	java MyFile 1 2 3 4
-//C.	java MyFile 1 2 2
-//D.	java MyFile 2 2
+//C. java MyFile 1 2 2
 //Answer: C
 
 //second version

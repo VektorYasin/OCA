@@ -1,7 +1,6 @@
 package q170;
 
 //public class Employee {
-//
 //	public int salary;
 //}
 //public class Manager extends Employee {
@@ -17,7 +16,23 @@ package q170;
 //		Manager manager = new Manager();
 //		Director director =new Director();
 //	    //line n1
+//        employee.salary = 50_000;
+//        director.salary = 80_000;
+//        employee.budget = 200_000;//parent class ancak budget var tanımlanmamış
+//        manager.budget = 1_000_000;
+//        manager.stockOption = 500;//stockOption hem manager hem de parent classta tanımlanmamış
+//        director.stockOptions = 1_000;
 //
 //}}
 ////Answer--> CE
+/*
+A. employee.salary = 50_000;
+B. director.salary = 80_000;
+C. employee.budget = 200_000;
+D. manager.budget = 1_000_000;
+E. manager.stockOption = 500;
+F. director.stockOptions = 1_000;
+ */
+//Which two options fail to compile when placed at line n1
+// of the main method? (Choose two.)
 

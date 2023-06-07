@@ -1,89 +1,55 @@
 package q082;
 
 public class Q_82 {
-
 }
+
 class Alpha{
+    int ns; //başlangıcta 0; ref1.ns=50; ref2.ns=125;  ref3.ns=100
+    static int s; //baslangıcta 0; dikkat statik 50, 125
 
-    int ns; //50
-    static int s; // 50, 125
-
-    Alpha(int ns){
-        if(s<ns){
-            s = ns;
-            this.ns = ns;
+    Alpha(int ns){//constructor
+        if(s<ns){//0<50, 50<125, 125<100 false
+            s = ns;//50, 125 s değişmez
+            this.ns = ns;//50, 125, değişmez 0
         }
     }
+
     void doPrint(){
         System.out.println("ns = "+ns+" s = "+s);
     }
 }
+
  class TestA{
     public static void main(String[] args) {
         Alpha ref1 = new Alpha(50);
         Alpha ref2 = new Alpha(125);
         Alpha ref3 = new Alpha(100);
 
-        ref1.doPrint();
-        ref2.doPrint();
-        ref3.doPrint();
+        ref1.doPrint();//ns = "+50+" s = "+125
+        ref2.doPrint();//ns = "+125+" s = "+125
+        ref3.doPrint();//ns = "+0+" s = "+125
     }
-
 }
 //What is the result?
-//A
-//            ns = 50   s = 125
-//            ns = 125  s = 125
-//            ns = 100  s = 125
-
 //B
 //            ns = 50  s = 125
 //            ns = 125  s = 125
 //            ns = 0  s = 125
+/*
+static; tüm objeler için değişir, static olmayan obje değişkenleri değişmez.
 
-//C
-//            ns = 50  s = 50
-//            ns = 125  s = 125
-//            ns = 100  s = 100
+Alpha ref1 = new Alpha(50); creates an instance of the Alpha class
+with ns value of 50. Since s is initially 0, the condition s < ns is true,
+and s is updated to 50. Therefore, the output is ns = 50 s = 50 for
+ref1.doPrint().
 
-//D
-//            ns = 50  s = 50
-//            ns = 125  s = 125
-//            ns = 100  s = 125
+Alpha ref2 = new Alpha(125); creates another instance with ns value of 125.
+Since s is now 50, the condition s < ns is true, and s is updated to 125.
+Therefore, the output is ns = 125 s = 125 for ref2.doPrint().
 
-//A.	Option A
-//B.	Option B
-//C.	Option C
-//D.	Option D
-//Answer: B
-
-//second version
-
-//class Alpha{
-//
-//   static int ns;
-//    int s;
-//
-//    Alpha(int ns){
-//        if(s<ns){
-//            s = ns;
-//            this.ns = ns;
-//        }
-//    }
-//    void doPrint(){
-//        System.out.println("ns = "+ns+" s = "+s);
-//    }
-//}
-//class TestA{
-//    public static void main(String[] args) {
-//        Alpha ref1 = new Alpha(50);
-//        Alpha ref2 = new Alpha(100);
-//        Alpha ref3 = new Alpha(125);
-//
-//        ref1.doPrint();
-//        ref2.doPrint();
-//        ref3.doPrint();
-//    }
-//
-//}
+Alpha ref3 = new Alpha(100); creates a third instance with ns value of 100.
+However, since s is already 125, the condition s < ns is false, and
+no update is made to s or ns. Therefore, the output is ns = 0 s = 125
+for ref3.doPrint(), where ns remains at its default value of 0.
+ */
 

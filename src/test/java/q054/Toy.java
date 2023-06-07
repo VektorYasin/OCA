@@ -16,7 +16,18 @@ public abstract class Toy {
 //			The void printToy (Toy t) method prints the details of a toy.
 // 		Which definition of the Toy class adds a valid layer of abstraction to the class hierarchy?
 
-// A. 	
+/*
+    By making the Toy class abstract, you prevent it from being instantiated directly and
+    indicate that it serves as a base class for other subclasses.
+
+    By declaring the Toy class as abstract, it cannot be instantiated directly using the new keyword.
+    Instead, it provides a blueprint for other subclasses (such as EduToy and ConsToy) to inherit from
+    and implement their own versions of the calculatePrice and printToy methods
+
+
+ */
+
+// A. 	answer
 //		public abstract class Toy{											// In an abstract class:
 //		public abstract int calculatePrice(Toy t);							// The abstract methods have no body
 //		public void printToy(Toy t) { /* code goes here*/}					// The concrete methods have body
@@ -31,7 +42,7 @@ public abstract class Toy {
 	
 // C. 
 //		public abstract class Toy{
-//		public  int calculatePrice(Toy t);									// concrete with no body throws error
+//		public int calculatePrice(Toy t);									// concrete with no body throws error
 //		public final void printToy(Toy t) { /* code goes here*/}
 //	}
 	

@@ -4,13 +4,15 @@ public class Question141 {
 	
 	public static void main(String[] args) {
         String names [] = {"Thomas", "Peter", "Joseph"};
-        String pwd [] = new String[3];
-        int idx = 0;
+        String pwd [] = new String[3];//3 elementli array tanımladık
+        int idx = 0;//1
         try{
-            for(String n : names){
-                pwd[idx] = n.substring(2,6);  //ilk yazilan deger include ama son yazilan deger include olmaz substring de
-              System.out.println(pwd[idx]);
-                idx++;
+            for(String n : names){//Thomas
+                pwd[idx] = n.substring(2,6);// pwd[0]=omas, pwd[1]=ter
+   //ilk yazilan deger include ama son yazilan deger include olmaz substring de
+   //substing() karakter sayısı yetmezse exception fırlatır
+              System.out.println(pwd[idx]);//omas ter seph
+                idx++;//1,2
             }
         }
         catch (Exception e){
@@ -24,28 +26,10 @@ public class Question141 {
     //What is result?
 
 //A
-// Invalid Name
-
-//B
-// Invalid Name
 // omas
+//Invalid Name
 
-//C
-// Invalid Name
-// omas
-// null
-// null
-
-//D
-// omas
-// ter
-// seph
-
-//A.	Option A
-//B.	Option B
-//C.	Option C
-//D.	Option D
-//Answer: C
+//Answer: A
 
     //second version
 

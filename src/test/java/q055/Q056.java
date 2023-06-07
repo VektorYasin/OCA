@@ -1,17 +1,17 @@
 package q055;
+//bu soru çıktı
 public class Q056 {
 
 	public static void main(String[] args) {
 
 		int x = 5;
-		while (isAvaillable(x)) {
+		while (isAvailable(x)) {
 			System.out.print(x);
 			x--;  // At line 7, insert x --;
 		}
 	}
 	
-	public static boolean isAvaillable(int x) {
-		
+	public static boolean isAvailable(int x) {
 		return x-- > 0 ? true : false;
 	}
 }

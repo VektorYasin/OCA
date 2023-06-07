@@ -1,28 +1,24 @@
 package q083;
 
 public class Q_83 {
-
 }
-class Test8 {
-	public static void main(String[] args) {
 
-		Test8 ts = new Test8();
+class Test {
+	public static void main(String[] args) {
+		Test ts = new Test();
 		System.out.println(isAvailable);
+
 		isAvailable = ts.doStuff();
 		System.out.println(isAvailable);
 	}
 	public static boolean doStuff() {
-		return !isAvailable;
+		return !isAvailable;//false döner
 	}
 	static boolean isAvailable = true;
 }
 		/*
 		 What is the result?
-		A. Compilation fails.
-		B. false true
 		C. true false
-		D. true true
-		E. false false
 		Answer: C
 		 */
 

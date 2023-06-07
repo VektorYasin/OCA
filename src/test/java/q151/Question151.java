@@ -3,36 +3,33 @@ package q151;
 public class Question151 {
 }
 //42.soru
-		class Alpha{
+class Alpha{
+	int ns;//0,  ref1 100, ref2 0, ref3 125
+	static int s;//0,  100,   125
+	//100  100   125  static oldugu icin en son aldigi deger yazilacak
+	//global deger int 0 ilk basta
 
-		    int ns;
-		    static int s; //100  100   125  static oldugu icin enson aldigi deger yazilacak   
-		    //global deger int 0 ilk basta
-
-		    Alpha(int ns){//100  0 125 if condition saglanmassa ns 0 oluyor
-		        if(s<ns){
-		            s = ns;
-		            this.ns = ns;
-		        }
-		    }
-		    void doPrint(){
-		        System.out.println("ns = "+ns+" s = "+s);
-		    }
+	Alpha(int ns){//100, 0 125 if condition saglanmazsa ns 0 oluyor
+		if(s<ns){//0<100, 100<125
+			s = ns;//100, 125
+			this.ns = ns;
 		}
-		class TestA{
-		    public static void main(String[] args) {
-		        Alpha ref1 = new Alpha(100);
+	}
+	void doPrint(){
+		System.out.println("ns = "+ns+" s = "+s);
+	}
+}
+class TestA{
+	public static void main(String[] args) {
+		Alpha ref1 = new Alpha(100);
+		Alpha ref2 = new Alpha(50);
+		Alpha ref3 = new Alpha(125);
 
-		        Alpha ref2 = new Alpha(50);
-
-		        Alpha ref3 = new Alpha(125);
-
-		        ref1.doPrint();
-		        ref2.doPrint();
-		        ref3.doPrint();
-		    }
-
-		}
+		ref1.doPrint();
+		ref2.doPrint();
+		ref3.doPrint();
+	}
+}
 		/**
 		 * A. ns = 100 s =125
 		ns = 0 s = 125

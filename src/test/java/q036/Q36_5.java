@@ -9,7 +9,7 @@ public class Q36_5 {
 			System.out.println(arr[i]+ " " );
 
 			if (arr[i].equals("D")) {  
-				continue; 
+				continue;//loop'un dışına çıkarır.
 			}
 			System.out.println("Work Done");  
 			continue; 
@@ -17,3 +17,13 @@ public class Q36_5 {
 
 	}
 }
+			/*
+			A
+			Work Done
+			B
+			Work Done
+			C
+			Work Done
+			D
+
+			 */

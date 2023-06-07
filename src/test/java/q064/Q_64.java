@@ -16,10 +16,24 @@ package q064;
     public class Q_64 {
         public static void main(String[] args) {
             System.out.println("Hello "+ new StringBuilder("Java SE 8"));
+        /*
+        new StringBuilder("Java SE 8") creates a StringBuilder object.
+        The toString() method of the StringBuilder class is invoked implicitly,
+        resulting in the string "Java SE 8". Therefore, the output will be
+        "Hello Java SE 8".
+         */
 
-           System.out.println("Hello "+ new MyString("Java SE 8").msg);
-    //        System.out.println("Hello "+ new MyString("Java SE 8").msg);
-            // soruda .msg yok. O durumda hash code yazdirir
+            System.out.println("Hello "+ new MyString("Java SE 8"));
+        /*
+         new MyString("Java SE 8") does not override the toString() method
+         from the Object class. As a result, the default implementation of
+         toString() in the Object class is used, which returns
+         a string representation of the object's class name followed by
+         the object's hashcode.
+         */
+
+//          System.out.println("Hello "+ new MyString("Java SE 8").msg);
+//          soruda .msg yok. O durumda hash code yazdirir
 
         }
     }
@@ -28,24 +42,7 @@ package q064;
 
 NOT: Q49_60.Q57 --> soruda p1 yani package name olarak verilmis
     What is the result?
-    A
-    Hello Java SE 8
-    Hello Java SE 8
-
-    B
-    Hello java.lang.StringBuilder@<<hashcode1>>
-    Hello Q49_60.Q57.MyString@<<hashcode1>>
-
     C
     Hello Java SE 8
     Hello Q49_60.Q57.MyString@<<hashcode1>>
-
-    D
-    Compilation fails at the Test class
-
-    A. Option A
-    B. Option B
-    C. Option C
-    D. Option D
-    Answer: C
 */

@@ -1,7 +1,7 @@
 package q058;
 
  class Q058 {
-	public static void main(String[] args) {
+	   public void main(String[] args) {
 		System.out.println("elif");
 		
 		
@@ -11,8 +11,7 @@ package q058;
 /**
  58. Which statement is true about the main() method?
  A. It is invoked by JRE
- B. It is a final method
- C. It returns true if it is executed successfully at run time
- D. It must be defined within a public class
+ It must have a void return type
+
  Answer: A
  */

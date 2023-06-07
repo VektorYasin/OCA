@@ -11,7 +11,7 @@ public class Q127 {
 	
 		|--O--|--O--|-----|
 		|-----|--X--|--O--|
-		|---X--|----|--X--|
+		|--X--|---- |--X--|		[2][0];[2][1];[2][2]
 		
 		The grid is created with the following code:	
 		 */
@@ -31,8 +31,6 @@ public class Q127 {
 	}
 
 }
-
-
 /*
 	Which line of code, when inserted in place of //line n1, adds an X into the grid so that the grid contains three
 	consecutive X’s?

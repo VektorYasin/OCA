@@ -16,15 +16,12 @@ public class Q_152 {
                 break;
 
             } else {
-//                continue;
+                //continue;
                 System.out.println(e);
-
-
+                //Which action enables it to print AB?
             }
 
         }
-
-
     }
 
 }

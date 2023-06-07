@@ -1,7 +1,8 @@
 package q188;
 
 public class CheckingAccount {
-    public int amount;                            //instanse variable // to call instance we can call trough the object
+    public int amount;//instance variable
+    //to call instance we can call through the object
 
     public CheckingAccount(int amount) {
         this.amount = amount;
@@ -16,10 +17,11 @@ public class CheckingAccount {
     }
 
     public void changeAmount(int x) {
-    	amount += x;					//amount = amount + x; 
+    	amount += x;	//amount = amount + x;
     }
     public static void main(String[] args) {
-        CheckingAccount acct = new CheckingAccount((int)(Math.random()*1000)); //Math.rondom() rondom bir rakam olustururyor.( between 0 and 1)
+        CheckingAccount acct = new CheckingAccount((int)(Math.random()*1000));
+        //Math.rondom() rondom bir rakam olustururyor.(between 0 and 1)
         // line n1
 //        acct.setAmount(-acct.getAmount());  // ==> negative random numbers
 //        acct.amount = 0;  // ==> 0
@@ -34,13 +36,9 @@ public class CheckingAccount {
  
 }
 //Which three lines, when inserted independently at line n1, cause the program to print a 0 balance?
-//A.	acct.setAmount(-acct.getAmount());
-//B.	acct.amount = 0; 												//<option D earlier>
+//B.	acct.amount = 0; 		//<option D earlier>
 //C.	acct.setAmount(0);
-//D.	acct.getAmount() = 0; 									//<option E earlier>
-//E.	this.amount = 0; 											//<option A earlier>
-//F.	acct.changeAmount(0); 							//<option F earlier>
-//G.	acct.changeAmount(-acct.amount); 		//<option G earlier>
+//G.	acct.changeAmount(-acct.amount); //<option G earlier>
 
 
     /*

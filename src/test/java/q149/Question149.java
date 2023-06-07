@@ -3,7 +3,8 @@ package q149;
 public class Question149 {
 	public static void main(String[] args) {
         Boolean[] bool = new Boolean[2];
-//parseBoolean =Returns the value of this {@code Boolean} object as a boolean primitive.
+//parseBoolean = Returns the value of this {@code Boolean} object
+//as a boolean primitive.
 //stringi boolean a ceviriyor
       
         bool[0] = new Boolean(Boolean.parseBoolean("1"));
@@ -12,7 +13,7 @@ public class Question149 {
 
         System.out.println(bool[0] + " " + bool[1]);
 
-    }
+    }//false false
 }
 
 

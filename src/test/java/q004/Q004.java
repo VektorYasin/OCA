@@ -2,16 +2,18 @@ package q004;
 
 public class Q004 {
 
-    public static void main(String[] args) {
-        int[] stack = {10, 20, 30};  //size=3
-        int size = 3;
-        int idx = 0;
+public static void main(String[] args) {
+    int[] stack = {10, 20, 30};  //size=3
+    int size = 3;
+    int idx = 0;
 
-        do {                      // Loop steps:
-            idx++;                // 1: idx = 0,   2: idx =1,
-        } while (idx < size - 1); // 1: idx =1,    2: idx =2,   (2<2) is false; loop ends--> The top element: 30
-        System.out.print("The top element: " + stack[idx]);
-    }
+    do {                      // Loop steps:
+        idx++;                // 1: idx = 0,   2: idx =1,
+    } while (idx < size - 1); // 1: idx =1,    2: idx =2,   (2<2) is false; loop ends--> The top element: 30
+
+    System.out.print("The top element: " + stack[idx]);
+    //The top element: 30
+}
 }
 
 /*

@@ -4,15 +4,15 @@ public class CheckingAccount {
 	public int amount;
 	// line n1
 		public CheckingAccount(){
-//		this.amount = 100;
-			amount = 100;
-
+//		this.amount = 100;//D şıkkı
+			amount = 100;//A şıkkı
 		}
 
 	public static void main(String[] args) {
 		CheckingAccount acc = new CheckingAccount();
 		// line n2
-		System.out.println(acc.amount);
+//		acc.amount=100; //E şıkkı
+		System.out.println(acc.amount);//100
 	}
 }
 /*
@@ -24,10 +24,11 @@ public class CheckingAccount {
  		}
  		
  	 B. At line n2 insert:
- 		this.amount = 100;   			// ==>Cannot use this in a static  context
+ 		this.amount = 100;  // ==>Cannot use this in a static  context
  		
  	 C. At line n2 insert:
- 		amount = 100;					// ==> Cannot make a static reference to the non-static field amount
+ 		amount = 100;
+ 	// ==> Cannot make a static reference to the non-static field amount
  		
  	 D. At line n1 insert:
  		public CheckingAccount(){
@@ -39,7 +40,8 @@ public class CheckingAccount {
  		
  	 F. At line n1 insert:
  		public CheckingAccount(){
- 		acc.amount = 100;				// ==> acc cannot be resolved to a variable
+ 		acc.amount = 100;
+ 		// ==> acc cannot be resolved to a variable
  		}
  
  */

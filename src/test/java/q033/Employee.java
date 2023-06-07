@@ -1,15 +1,18 @@
-package q033;
-
+package q033;//bu soru cıktı
 public class Employee {
 	String name;
 	boolean contract;
 	double salary;
+
 	Employee() {
 		//line1
-		name="Joe";
-//		this.name = new String("Joe");
-//		this.contract = new Boolean(true);
-//		this.salary = new Double(100);
+		this.name = new String("Joe");
+		this.contract = new Boolean(true);
+		this.salary = new Double(100);
+		/*
+		 konstructor icerisinde atama yapilirsa
+		 olusturulan tum objeler bu degerlere sahip olacaktir.
+		 */
 	}
 	public String toString() {
 		return name + ":" + contract + ":" + salary;	
@@ -17,10 +20,15 @@ public class Employee {
 	public static void main(String[] args) {
 		Employee e = new Employee();
 		// line2
-		e.name="elif";
-		System.out.println(e);		
+// 		Assign values directly to instance variables
+		e.name="Joe";
+		e.contract=true;
+		e.salary=100;
+		System.out.println(e);
+		//obje olusturulduktan sonra sadece o objeye deger atamak icin kullanilir.
+		// e uzerinden atama yapilmalidir.
 	}
-}
+}		//Joe: true: 100.0?
 /* 
   Which two modifications, when made independently, enable the code to print joe:true:100.0 ? ( Choose Two)
  * Output w/o any change ==> null:false:0.0 

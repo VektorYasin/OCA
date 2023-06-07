@@ -2,8 +2,8 @@ package Q220;
 
 public class MainTest {
     public static void main(String[] args) {
-        String arg[]={"12dsafasfasf3"};
-        System.out.println("String main "+arg[0]);
+        String arg[] = {"12dsafasfasf3"};
+        System.out.println("String main " + arg[0]);
     }
 }
 //and commands:

@@ -1,4 +1,4 @@
-package q074;
+package q075;
 
 public class Q_74 {
     public static void main(String[] args) {

@@ -2,7 +2,6 @@ package q145;
 
 public class Questions145 { //Class name is SumTest
 	
-	
 	    public static void doSum(Integer x, Integer y) {
 	        System.out.println("Integer sum is " + (x + y));
 	    }
@@ -15,12 +14,16 @@ public class Questions145 { //Class name is SumTest
 	        System.out.println("float sum is " + (x + y));
 	    }
 
-	    public static void main(String[] args) {  //once primitive cagrilir
+	    public static void main(String[] args) {//once primitive cagrilir
 
 	        doSum(10, 20);
+			//int methodu olmadıgı için int'e parametreli method olmadığından
+			// en yakın olan float parameterli metodu kullanılır.
 	        doSum(10.0, 20.0);
+			//byte, short, int, float, long, double
 
-	    }}
+	    }
+}
 	    
 	    
     

@@ -6,21 +6,19 @@ import java.util.List;
 
 public class Q043 {
 
-		public static void main(String[] args) {
+	public static void main(String[] args) {
+		String[] arr = {"Hi", "How", "Are", "You"};
 
-			String[] arr = {"Hi", "How", "Are", "You"};
+		List<String> arrList = new ArrayList<>(Arrays.asList(arr));
 
-			List<String> arrList = new ArrayList<>(Arrays.asList(arr));
+		if(arrList.removeIf((String s) -> {
+			return s.length() <=2;} )){ // < 2
 
-			if(arrList.removeIf((String s) -> { return s.length() <=2;} )){ // < 2
+//		System.out.println(s +" removed"); //s causes compilation error
 
-			//System.out.println(s +" removed"); //s causes compilation error
-
-			}
+		System.out.println(arrList +" removed");//[How, Are, You] removed
 		}
 	}
+}
 //What is the result?
 //A.	Compilation fails.
-//B.	Hi removed
-//C.	An UnsupportedOperationException is thrown at runtime.
-//D.	The program compiles, but it prints nothing.

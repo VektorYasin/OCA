@@ -2,8 +2,8 @@ package Q217;
 
 public class MyClass {
     public static void main(String[] args) {
-        String s="Java SE 8 1";
-        int len=s.trim().length();
+        String s = "Java SE 8 1";
+        int len = s.trim().length();//trim; baştaki ve sondaki boşlukları alır.
         System.out.println(len);
     }
 }

@@ -18,8 +18,6 @@ public class Q036 {
 	}
 }
 //What is the result?
-//A.	A B C Work done
-//B.	A B C D Work done
+
 //C.	A B Work done
-//D.	Compilation fails
 

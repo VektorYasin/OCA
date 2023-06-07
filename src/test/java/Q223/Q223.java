@@ -2,20 +2,15 @@ package Q223;
 
 public class Q223 {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5};
-        int i=0;
+        int[] arr = {1, 2, 3, 4, 5};
+        int i = 0;
         do {
-            System.out.println(arr[i]+" ");
-            i++;
-        }while(i<arr.length+1);
+            System.out.println(arr[i] + " ");//1,2,3,4,5, arrayOutOfBound exception
+            i++;//1,2,3,4,5
+        } while (i < arr.length + 1);//i<6
 
     }
 }
 /*What is the result?
-A. 1 2 3 4followed by an ArrayIndexOutOfBoundsException
-B. 1 2 3
-C. 1 2 3 4
-D. Compilation fails.
- Answer: B  diyor ama cevap A  aciklamsinda Console 8 9 10 farkli demis
-
+A. 1 2 3 4 5 followed by an ArrayIndexOutOfBoundsException
  */

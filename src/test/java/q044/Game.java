@@ -16,6 +16,7 @@ public class Game {
             menu();
             System.out.println("What is your choice?");
             option = input.nextInt();
+
             if (option == 1) {
                 System.out.println("You chose Left");
             } else if (option == 2) {

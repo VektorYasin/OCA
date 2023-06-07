@@ -6,8 +6,8 @@ public class Employee {
     private int salary;
 
 //  public Employee(){
-
 //    }
+
      public Employee(String name, int age) {
          setName(name);
          setAge(age);
@@ -17,7 +17,8 @@ public class Employee {
          this(name, age);
          setSalary(salary);
      }
-     //getter and setter methods for attributes go here
+
+    //getter and setter methods for attributes go here
      public void setSalary(int salary) {
          this.salary = salary;
      }
@@ -34,11 +35,11 @@ public class Employee {
 }
 class Test{
     public static void main(String[] args) {
-//       Employee e1 = new Employee();  //we need to create default constructor
+//        Employee e1 = new Employee();  //we need to create default constructor
         Employee e2 = new Employee("Jack", 50);
         Employee e3 = new Employee("Chloe", 40, 5000);
 
-//      e1.printDetails();
+//        e1.printDetails();
         e2.printDetails();
         e3.printDetails();
     }
